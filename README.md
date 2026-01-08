@@ -3,7 +3,7 @@
 GitHubのContribution（草）を、ターミナルで簡易的に確認するためのTypeScriptプログラム。
 
 
-## 特徴
+## 概要
 
 - Bun Shellで実行
 - GitHub CLI（`gh`コマンド）を使用します。認証はghコマンドが担います。
