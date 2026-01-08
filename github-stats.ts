@@ -43,6 +43,7 @@ try {
   // 5. 集計
   const today = days[0]?.contributionCount ?? 0;
   const yesterday = days[1]?.contributionCount ?? 0;
+  const twodaysAgo = days[2]?.contributionCount ?? 0;
   const last7Days = days.slice(0, 7).reduce((acc: number, d: any) => acc + d.contributionCount, 0);
 
   // 6. 結果表示
@@ -50,6 +51,7 @@ try {
   console.log(`────────────────────────────`);
   console.log(`Today:       ${today.toString().padStart(3)} 🟢`);
   console.log(`Yesterday:   ${yesterday.toString().padStart(3)}`);
+  console.log(`2 Days Ago:  ${twodaysAgo.toString().padStart(3)}`);
   console.log(`Last 7 Days: ${last7Days.toString().padStart(3)}`);
   console.log(`────────────────────────────\n`);
 
